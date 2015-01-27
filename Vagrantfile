@@ -22,5 +22,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", 2048]
   end
+  
+  # provision the VM
+  config.vm.provision "shell", path: "provision.sh"
+  
 end
 
