@@ -13,7 +13,7 @@ cd galaxy-dist
 hg update stable
 
 # copy configuration info into galaxy install
-cp /vagrant/config/* config/
+cp /vagrant/config/* config/  # TODO make alveo_tool_conf.xml a symbolic link
 
 # link to our tools directory
 mkdir alveotools

@@ -2,7 +2,7 @@
 <!-- this file lists tools that we are developing and want to test in this Galaxy installation -->
 <toolbox tool_path="alveotools">
   <section id="dev" name="Development">
-    <tool file="alveo/Frequency.xml" />
+    <tool file="alveo/frequency/Frequency.xml" />
   </section>
 </toolbox>
 
