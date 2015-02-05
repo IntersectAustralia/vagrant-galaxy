@@ -13,11 +13,15 @@ cd galaxy-dist
 hg update stable
 
 # copy configuration info into galaxy install
-cp /vagrant/config/* config/  # TODO make alveo_tool_conf.xml a symbolic link
+cp /vagrant/config/galaxy.ini config/
+cp /vagrant/config/tool* config/
+ln -s /vagrant/config/alveo_tool_conf.xml config/alveo_tool_conf.xml
 
 # link to our tools directory
-mkdir alveotools
-ln -s /vagrant/tools/ alveotools/alveo
+#mkdir alveotools
+#ln -s /vagrant/tools/ alveotools/alveo
+ln -s /vagrant/tools-dev tools-dev
+
 # now tools in the local tools directory can be listed in alveo_tool_conf.xml and will
 # appear in Galaxy
 
@@ -26,9 +30,6 @@ mkdir toolshed_dep
 
 # make galaxy-dist writable by default user
 chown -R vagrant .
-
-# TODO: edit config/galaxy.ini to change name of admin user (look for steve.cassidy@mq.edu.au and change)
-
 
 # you can now login to the VM (vagrant ssh) and cd to galaxy-dist and run galaxy with 
 # sh ./run.sh
