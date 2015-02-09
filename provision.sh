@@ -5,6 +5,7 @@ apt-get install -y -q python2.7 python2.7-dev mercurial autoconf automake autoto
 # install NLTK python library and all data (tool requirement)
 sudo pip install nltk
 sudo python -m nltk.downloader -d /usr/share/nltk_data all
+sudo pip install https://github.com/Alveo/pyalveo/archive/master.zip
 
 # install latest stable galaxy 
 
