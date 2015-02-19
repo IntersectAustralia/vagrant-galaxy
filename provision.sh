@@ -5,6 +5,8 @@ apt-get install -y -q python2.7 python2.7-dev mercurial autoconf automake autoto
 # install NLTK python library and all data (tool requirement)
 sudo pip install nltk
 sudo python -m nltk.downloader -d /usr/share/nltk_data all
+
+# install the pyAlveo client library
 sudo pip install https://github.com/Alveo/pyalveo/archive/master.zip
 
 # install latest stable galaxy 
@@ -19,8 +21,6 @@ cp /vagrant/config/tool* config/
 ln -s /vagrant/config/alveo_tool_conf.xml config/alveo_tool_conf.xml
 
 # link to our tools directory
-#mkdir alveotools
-#ln -s /vagrant/tools/ alveotools/alveo
 ln -s /vagrant/tools-dev tools-dev
 
 # now tools in the local tools directory can be listed in alveo_tool_conf.xml and will
