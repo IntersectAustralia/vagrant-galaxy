@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- this file lists tools that we are developing and want to test in this Galaxy installation -->
-<toolbox tool_path="alveotools">
+<toolbox tool_path="tools-dev">
   <section id="dev" name="Development">
-    <tool file="alveo/Frequency.xml" />
   </section>
 </toolbox>
 
