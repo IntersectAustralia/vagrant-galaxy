@@ -3,4 +3,5 @@
     <tool_shed name="Galaxy main tool shed" url="http://toolshed.g2.bx.psu.edu/"/>
     <tool_shed name="Galaxy test tool shed" url="http://testtoolshed.g2.bx.psu.edu/"/>
     <tool_shed name="Alveo Galaxy tool shed" url="http://galaxy.alveo.edu.au:9009/"/>
+    <tool_shed name="Local Test tool shed" url="http://127.0.0.1:9009/"/>
 </tool_sheds>
