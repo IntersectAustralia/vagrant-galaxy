@@ -16,6 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   # we'll forward the port 8000 from the VM to the port 8000 on the host
   config.vm.network :forwarded_port, host: 8010, host_ip: "127.0.0.1", guest: 8010
+  config.vm.network :forwarded_port, host: 9009, host_ip: "127.0.0.1", guest: 9009
   config.vm.synced_folder("./config", "/vagrant/config")
   config.vm.synced_folder("../hcsvlab-galaxy/tools", "/vagrant/tools-dev")
 

@@ -17,6 +17,7 @@ hg update stable
 
 # copy configuration info into galaxy install
 cp /vagrant/config/galaxy.ini config/
+cp /vagrant/config/tool_shed.ini config/
 cp /vagrant/config/tool* config/
 ln -s /vagrant/config/alveo_tool_conf.xml config/alveo_tool_conf.xml
 
