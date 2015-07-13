@@ -73,5 +73,5 @@ You can then change to the Galaxy directory and start the server:
 % ./run.sh
 ```
 
-Point your browser to `127.0.0.1:8010` and you should see Galaxy running. The admin account can be accessed by registering a user with the email address `admin@test.org`.
+Point your browser to `127.0.0.1:8010` and you should see Galaxy running. The admin account can be accessed by registering a user with the email address `alveo@test.org`.
 
