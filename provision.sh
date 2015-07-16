@@ -14,6 +14,7 @@ git clone https://github.com/galaxyproject/galaxy.git
 git checkout master
 
 # copy configuration info into galaxy install
+cd galaxy
 cp /vagrant/config/galaxy.ini config/
 cp /vagrant/config/tool_shed.ini config/
 cp /vagrant/config/tool* config/
