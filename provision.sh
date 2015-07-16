@@ -1,6 +1,6 @@
 
 apt-get update
-apt-get install -y -q python2.7 python2.7-dev mercurial autoconf automake autotools-dev build-essential cmake git-core libatlas-base-dev libblas-dev liblapack-dev libc6-dev subversion pkg-config sudo wget python-pip
+apt-get install -y -q python2.7 python2.7-dev git autoconf automake autotools-dev build-essential cmake git-core libatlas-base-dev libblas-dev liblapack-dev libc6-dev subversion pkg-config sudo wget python-pip
 
 # install NLTK python library and all data (tool requirement)
 sudo pip install nltk
@@ -10,10 +10,8 @@ sudo python -m nltk.downloader -d /usr/share/nltk_data all
 sudo pip install https://github.com/Alveo/pyalveo/archive/master.zip
 
 # install latest stable galaxy 
-
-hg clone https://bitbucket.org/galaxy/galaxy-dist/
-cd galaxy-dist
-hg update stable
+git clone https://github.com/galaxyproject/galaxy.git
+git checkout master
 
 # copy configuration info into galaxy install
 cp /vagrant/config/galaxy.ini config/
