@@ -3,8 +3,8 @@ apt-get update
 apt-get install -y -q python2.7 python2.7-dev git autoconf automake autotools-dev build-essential cmake git-core libatlas-base-dev libblas-dev liblapack-dev libc6-dev subversion pkg-config sudo wget python-pip
 
 # install NLTK python library and all data (tool requirement)
-sudo pip install nltk
-sudo python -m nltk.downloader -d /usr/share/nltk_data all
+#sudo pip install nltk
+#sudo python -m nltk.downloader -d /usr/share/nltk_data all
 
 # install the pyAlveo client library
 sudo pip install https://github.com/Alveo/pyalveo/archive/master.zip
